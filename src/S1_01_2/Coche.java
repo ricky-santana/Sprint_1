@@ -1,6 +1,9 @@
 package S1_01_2;
 
 public class Coche {
+    static {
+        System.out.println("Objeto coche instanciado");
+    }
 
     private static final String brand = "Cupra";
     private static String model;

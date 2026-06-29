@@ -2,6 +2,7 @@ import S1_01.Instrument;
 import S1_01.PercussionInstrument;
 import S1_01.StringInstrument;
 import S1_01.WindInstrument;
+import S1_01_2.Coche;
 
 void main() {
 
@@ -18,6 +19,14 @@ void main() {
     bongo.play();
     viola.play();
     flauta.play();
+
+    // S1_01_2
+    Coche.brake();
+
+    Coche cochito = new Coche ("born", 430);
+    cochito.accelerate();
+
+
 
     }
 
