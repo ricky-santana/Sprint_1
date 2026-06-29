@@ -13,6 +13,10 @@ public abstract class Noticia {
         this.precio = precio;
     }
 
+    public String getTitular() {
+        return titular;
+    }
+
     public abstract void calcularPrecio ();
     public abstract void calcularPuntuacion ();
 }
