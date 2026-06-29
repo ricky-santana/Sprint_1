@@ -29,5 +29,5 @@ Un único método y una forma de demostrar que se ha cargado la clase
 ## 🧩 Explicación carga
 Al instanciar un objeto este se carga en la memoria de la JVM.
 Sin instanciar un objeto también se carga en memoria si accedo al metodo static del mismo.
-La principal diferencia es que cada vez que instancies la clase, se ejecutará el "bloque" static, sin emmbargo el método de carga estática solo se ejecuta al llamarlo. En ambos casos el objeto es cargado en memoria.
+La principal diferencia es que cada vez que instancies la clase, se ejecutará el "bloque" static, sin emmbargo el método de .cargaEstatica solo se ejecuta al llamarlo. En ambos casos el objeto es cargado en memoria.
 
