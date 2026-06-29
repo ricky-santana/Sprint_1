@@ -14,4 +14,5 @@ public abstract class Noticia {
     }
 
     public abstract void calcularPrecio ();
+    public abstract void calcularPuntuacion ();
 }
