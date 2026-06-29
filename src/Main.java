@@ -3,6 +3,7 @@ import S1_01.PercussionInstrument;
 import S1_01.StringInstrument;
 import S1_01.WindInstrument;
 import S1_01_2.Coche;
+import S1_02.Smartphone;
 
 void main() {
 
@@ -25,6 +26,15 @@ void main() {
 
     Coche cochito = new Coche ("born", 430);
     cochito.accelerate();
+
+    //S1_02
+    Smartphone iPhone = new Smartphone("Apple", "17Pro");
+
+    iPhone.call();
+    iPhone.cameraShot();
+    iPhone.ringAlarm();
+
+
 
 
 
