@@ -15,6 +15,9 @@ public class NoticiaFutbol extends Noticia{
         this.precioFinal = 0d;
     }
 
+    public double getPrecioFinal() {
+        return precioFinal;
+    }
 
     @Override
     public void calcularPrecio() {

@@ -13,6 +13,10 @@ public class NoticiaBaloncesto extends Noticia{
         this.precioFinal = 0d;
     }
 
+    public double getPrecioFinal() {
+        return precioFinal;
+    }
+
     @Override
     public void calcularPrecio() {
         this.precioFinal = precioBase;
