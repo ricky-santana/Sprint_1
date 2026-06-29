@@ -1,10 +1,10 @@
 package S1_03;
 
 public class NoticiaFutbol extends Noticia{
-    private String competicion;
-    private String club;
-    private String jugador;
-    private static final double precioBase = 300;
+    private final String competicion;
+    private final String club;
+    private final String jugador;
+    private static final double precioBase = 300d;
     private double precioFinal;
 
     public NoticiaFutbol(String titular, String texto, int puntuacion, double precio, String competicion, String club, String jugador) {
@@ -26,7 +26,7 @@ public class NoticiaFutbol extends Noticia{
         if (this.club.equalsIgnoreCase("Barçca") || this.club.equalsIgnoreCase("Madrid")){
             precioFinal += 100;
         }
-        if (this.jugador.equalsIgnoreCase("Ferran")) || this.jugador.equalsIgnoreCase("Benzema"){
+        if (this.jugador.equalsIgnoreCase("Ferran") || this.jugador.equalsIgnoreCase("Benzema")){
             precioFinal +=50;
         }
     }
