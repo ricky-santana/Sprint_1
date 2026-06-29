@@ -11,4 +11,11 @@ public class Coche {
         this.power = power;
     }
 
+    public static void brake (){
+        System.out.println("Frenando");
+    }
+    public void accelerate (){
+        System.out.println("Acelerando");
+    }
+
 }
