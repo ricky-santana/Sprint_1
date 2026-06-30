@@ -2,9 +2,9 @@ package S1_03;
 
 public class NoticiaF1 extends Noticia {
     private final String escuderia;
-    private static final double precioBase = 100d;
+    private static final double PRECIO_BASE = 100d;
     private double precioFinal;
-    private static final int puntuacionBase = 4;
+    private static final int PUNTUACION_BASE = 4;
     private int puntuacionFinal;
 
     public NoticiaF1 (String titular, String texto, int puntuacion, double precio, String escuderia) {
@@ -22,7 +22,7 @@ public class NoticiaF1 extends Noticia {
 
     @Override
     public void calcularPrecio() {
-        this.precioFinal = precioBase;
+        this.precioFinal = PRECIO_BASE;
         if (this.escuderia.equalsIgnoreCase("Ferrari") ||
                 this.escuderia.equalsIgnoreCase("Mercedes")){
             precioFinal += 50;
@@ -30,7 +30,7 @@ public class NoticiaF1 extends Noticia {
     }
     @Override
     public void calcularPuntuacion() {
-        this.puntuacionFinal = puntuacionBase;
+        this.puntuacionFinal = PUNTUACION_BASE;
         if (this.escuderia.equalsIgnoreCase("Ferrari") ||
                 this.escuderia.equalsIgnoreCase("Mercedes")){
             puntuacionFinal += 2;

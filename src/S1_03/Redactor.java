@@ -11,9 +11,9 @@ public class Redactor {
     public Redactor(String nombre, String dni) {
         this.nombre = nombre;
         this.dni = dni;
-        this.listaNoticias = new ArrayList<Noticia>();
+        this.listaNoticias = new ArrayList<>();
     }
-    // Los getters que se usarán
+
     public ArrayList<Noticia> getListaNoticias() {
         return listaNoticias;
     }
@@ -22,9 +22,9 @@ public class Redactor {
         return dni;
     }
 
-    // Los setters que se usará
+
     public static void setSueldo(double sueldo) {
-        Redactor.sueldo = sueldo; // En cuanto se haga un setSueldo todos los redactores pasaran a cobrar lo mismo
+        Redactor.sueldo = sueldo;
     }
 
     public String mostrarNoticias () {

@@ -3,9 +3,9 @@ package S1_03;
 public class NoticiaBaloncesto extends Noticia{
     private final String competicion;
     private final String club;
-    private static final double precioBase = 250d;
+    private static final double PRECIO_BASE = 250d;
     private double precioFinal;
-    private static final int puntuacionBase = 4;
+    private static final int PUNTUACION_BASE = 4;
     private int puntuacionFinal;
 
     public NoticiaBaloncesto(String titular, String texto, int puntuacion, double precio, String competicion, String club) {
@@ -26,7 +26,7 @@ public class NoticiaBaloncesto extends Noticia{
 
     @Override
     public void calcularPrecio() {
-        this.precioFinal = precioBase;
+        this.precioFinal = PRECIO_BASE;
         if (this.competicion.equalsIgnoreCase("Euroliga")){
             precioFinal += 75;
         }
@@ -36,7 +36,7 @@ public class NoticiaBaloncesto extends Noticia{
     }
     @Override
     public void calcularPuntuacion() {
-        this.puntuacionFinal = puntuacionBase;
+        this.puntuacionFinal = PUNTUACION_BASE;
         if (this.competicion.equalsIgnoreCase("Euroliga")){
             puntuacionFinal += 3;
         }

@@ -4,9 +4,9 @@ public class NoticiaFutbol extends Noticia{
     private final String competicion;
     private final String club;
     private final String jugador;
-    private static final double precioBase = 300d;
+    private static final double PRECIO_BASE = 300d;
     private double precioFinal;
-    private static final int puntuacionBase = 5;
+    private static final int PUNTUACION_BASE = 5;
     private int puntuacionFinal;
 
 
@@ -27,12 +27,12 @@ public class NoticiaFutbol extends Noticia{
 
     @Override
     public void calcularPrecio() {
-        precioFinal = precioBase;
+        precioFinal = PRECIO_BASE;
 
         if (this.competicion.equalsIgnoreCase("Liga de Campeones")){
             precioFinal += 100;
         }
-        if (this.club.equalsIgnoreCase("Barçca") || this.club.equalsIgnoreCase("Madrid")){
+        if (this.club.equalsIgnoreCase("Barça") || this.club.equalsIgnoreCase("Madrid")){
             precioFinal += 100;
         }
         if (this.jugador.equalsIgnoreCase("Ferran") || this.jugador.equalsIgnoreCase("Benzema")){
@@ -41,7 +41,7 @@ public class NoticiaFutbol extends Noticia{
     }
     @Override
     public void calcularPuntuacion() {
-        this.puntuacionFinal = puntuacionBase;
+        this.puntuacionFinal = PUNTUACION_BASE;
 
         if (this.competicion.equalsIgnoreCase("Liga de campeones")){
             puntuacionFinal += 3;

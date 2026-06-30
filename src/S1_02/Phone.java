@@ -1,8 +1,8 @@
 package S1_02;
 
 public abstract class Phone {
-    private String brand;
-    private String model;
+    private final String brand;
+    private final String model;
 
     public Phone(String brand, String model) {
         this.brand = brand;

@@ -2,9 +2,9 @@ package S1_03;
 
 public class NoticiaTenis extends Noticia {
     private final String tenistas;
-    private static final double precioBase = 100d;
+    private static final double PRECIO_BASE = 100d;
     private double precioFinal;
-    private static final int puntuacionBase = 4;
+    private static final int PUNTUACION_BASE = 4;
     private int puntuacionFinal;
 
     public NoticiaTenis (String titular, String texto, int puntuacion, double precio, String tenistas) {
@@ -23,7 +23,7 @@ public class NoticiaTenis extends Noticia {
 
     @Override
     public void calcularPrecio() {
-        this.precioFinal = precioBase;
+        this.precioFinal = PRECIO_BASE;
         if (this.tenistas.equalsIgnoreCase("Federer") ||
                 this.tenistas.equalsIgnoreCase("Nadal") ||
                 this.tenistas.equalsIgnoreCase("Djokovic")){
@@ -33,7 +33,7 @@ public class NoticiaTenis extends Noticia {
     }
     @Override
     public void calcularPuntuacion() {
-        this.puntuacionFinal = puntuacionBase;
+        this.puntuacionFinal = PUNTUACION_BASE;
         if (this.tenistas.equalsIgnoreCase("Federer") ||
                 this.tenistas.equalsIgnoreCase("Nadal") ||
                 this.tenistas.equalsIgnoreCase("Djokovic")){

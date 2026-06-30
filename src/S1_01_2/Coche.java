@@ -5,12 +5,12 @@ public class Coche {
         System.out.println("Objeto coche instanciado");
     }
 
-    private static final String brand = "Cupra";
+    private static final String BRAND = "Cupra";
     private static String model;
     private final int power;
 
     public Coche(String model, int power){
-        this.model = model;
+        Coche.model = model;
         this.power = power;
     }
 
