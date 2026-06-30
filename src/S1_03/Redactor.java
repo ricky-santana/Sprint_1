@@ -27,6 +27,13 @@ public class Redactor {
         Redactor.sueldo = sueldo;
     }
 
+    public void addNoticia (Noticia noticia){
+        listaNoticias.add(noticia);
+    }
+    public void deleteNoticia (int idNoticia){
+        listaNoticias.remove(idNoticia);
+    }
+
     public String mostrarNoticias () {
         String respuesta = "Noticias del redactor " + this.nombre + ":\n";
         for(Noticia noticia : this.listaNoticias) {

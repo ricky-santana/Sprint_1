@@ -195,7 +195,7 @@ public class Main {
                 System.out.println("Jugador:");
                 jugador = entrada.nextLine();
                 NoticiaFutbol noticiaFutbol = new NoticiaFutbol(titular, texto, puntuacion, precio, competicion, club, jugador);
-                redactores.get(idRedactor).getListaNoticias().add(noticiaFutbol);
+                redactores.get(idRedactor).addNoticia(noticiaFutbol);
                 respuesta = "Noticia de fútbol añadida";
                 break;
             case 2:
@@ -204,28 +204,28 @@ public class Main {
                 System.out.println("Club:");
                 club = entrada.nextLine();
                 NoticiaBaloncesto noticiaBaloncesto = new NoticiaBaloncesto(titular, texto, puntuacion, precio, competicion, club);
-                redactores.get(idRedactor).getListaNoticias().add(noticiaBaloncesto);
+                redactores.get(idRedactor).addNoticia(noticiaBaloncesto);
                 respuesta = "Noticia de basket añadida";
                 break;
             case 3:
                 System.out.println("tenistas:");
                 tenistas = entrada.nextLine();
                 NoticiaTenis noticiaTenis = new NoticiaTenis(titular, texto, puntuacion, precio, tenistas);
-                redactores.get(idRedactor).getListaNoticias().add(noticiaTenis);
+                redactores.get(idRedactor).addNoticia(noticiaTenis);
                 respuesta = "Noticia de Tenis añadida";
                 break;
             case 4:
                 System.out.println("Escudería:");
                 escuderia = entrada.nextLine();
                 NoticiaF1 noticiaF1 = new NoticiaF1(titular, texto, puntuacion, precio, escuderia);
-                redactores.get(idRedactor).getListaNoticias().add(noticiaF1);
+                redactores.get(idRedactor).addNoticia(noticiaF1);
                 respuesta = "Noticia de F1 añadida";
                 break;
             case 5:
                 System.out.println("Equipo:");
                 equipo = entrada.nextLine();
                 NoticiaMoto noticiaMoto = new NoticiaMoto (titular, texto, puntuacion, precio,equipo);
-                redactores.get(idRedactor).getListaNoticias().add(noticiaMoto);
+                redactores.get(idRedactor).addNoticia(noticiaMoto);
                 respuesta = "Noticia de Moto añadida";
                 break;
         }
@@ -252,7 +252,7 @@ public class Main {
         if(idNoticia == -1){
             respuesta = "La noticia no existe";
         } else {
-            redactores.get(idRedactor).getListaNoticias().remove(idNoticia);
+            redactores.get(idRedactor).deleteNoticia(idNoticia);
             respuesta = "noticia eliminada";
         }
         return respuesta;

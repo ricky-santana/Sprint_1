@@ -19,8 +19,8 @@ public abstract class Noticia {
 
     public abstract void calcularPrecio ();
     public abstract double getPrecioFinal();
-
     public abstract void calcularPuntuacion ();
-
     public abstract double getPuntuacionFinal();
+
+
 }
