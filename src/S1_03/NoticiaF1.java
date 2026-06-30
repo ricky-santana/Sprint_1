@@ -7,7 +7,7 @@ public class NoticiaF1 extends Noticia {
     private static final int puntuacionBase = 4;
     private int puntuacionFinal;
 
-    public NoticiaF1 (String titular, String texto, int puntuacion, double precio, String escuderia, double precioFinal) {
+    public NoticiaF1 (String titular, String texto, int puntuacion, double precio, String escuderia) {
         super(titular, texto, puntuacion, precio);
         this.escuderia = escuderia;
         this.precioFinal = precioFinal;

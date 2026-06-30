@@ -7,9 +7,9 @@ public class NoticiaTenis extends Noticia {
     private static final int puntuacionBase = 4;
     private int puntuacionFinal;
 
-    public NoticiaTenis (String titular, String texto, int puntuacion, double precio, String competicion, String club) {
+    public NoticiaTenis (String titular, String texto, int puntuacion, double precio, String tenistas) {
         super(titular, texto, puntuacion, precio);
-        this.tenistas = club;
+        this.tenistas = tenistas;
         this.precioFinal = 0d;
         this.puntuacionFinal = 0;
     }

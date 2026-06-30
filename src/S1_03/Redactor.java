@@ -8,7 +8,7 @@ public class Redactor {
     private static double sueldo = 1500d;
     private ArrayList<Noticia> listaNoticias;
 
-    public Redactor(String nombre, String dni, ArrayList<Noticia> listaNoticias) {
+    public Redactor(String nombre, String dni) {
         this.nombre = nombre;
         this.dni = dni;
         this.listaNoticias = new ArrayList<Noticia>();
